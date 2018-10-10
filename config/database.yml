@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  host: localhost
+  username: root
+  password: 12345
+
+development:
+  <<: *default
+  database: devise_development
+
+test:
+  <<: *default
+  database: devise_test
+
+production:
+  <<: *default
+  database: db/production

@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+  <div>
+    <p>Hello - <%= current_user.username%></p>
+  </div>
+<% else %>
+  <h3>Home page</h3>
+<% end %>
