@@ -20,6 +20,7 @@ gem "jquery-rails"
 gem "faker"
 gem "bulk_insert"
 gem "bcrypt"
+gem "rails-i18n"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
