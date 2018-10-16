@@ -1,6 +1,7 @@
 <% if user_signed_in? %>
   <div>
     <p><%= t ".hello" %> - <%= current_user.username%></p>
+    <%= link_to "users", users_path, class:"btn btn-success" %>
   </div>
 <% else %>
   <h3><%= t ".home_page" %></h3>

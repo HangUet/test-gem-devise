@@ -1,0 +1,19 @@
+<%= search_form_for @q, class: "form-inline" do |f| %>
+
+  <div class="form-group">
+    <%= f.label :username_or_phonenumber_or_email_cont, "Name or email or phone:" %>
+    <%= f.search_field :username_or_phonenumber_or_email_cont, class: "form-control" %><br>
+  </div>
+  <%= f.submit "Search", class: "btn btn-default" %>
+<% end %>
+<table class="table table-hover">
+
+  <tbody>
+    <% @result.each do |user| %>
+      <tr>
+        <td> <%= user.username %> </td>
+        <td> <%=user.email %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
