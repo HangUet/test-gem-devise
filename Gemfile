@@ -22,7 +22,7 @@ gem "faker"
 gem "bulk_insert"
 gem "bcrypt"
 gem "rails-i18n"
-gem "ransack"
+gem "ransack", github:"activerecord-hackery/ransack"
 gem "bootstrap4-kaminari-views"
 
 group :development, :test do
